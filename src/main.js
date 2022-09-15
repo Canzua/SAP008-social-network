@@ -1,10 +1,7 @@
-// Este es el punto de entrada de tu aplicacion
-//import { myFunction } from './lib/index.js';
-//myFunction();
+
 
 import login from './login/login.js';
 import register from './register/register.js';
-import post from "./postagem/postagem.js";
 
 const main = document.querySelector('#root');
 
@@ -25,11 +22,8 @@ const init = () => {
 } ;        
 
 window.addEventListener("load",  () => {
-
-    content.appendChild(login());
-    content.appendChild(register());
-    content.appendChild(post());
-    
-
+    main.appendChild(login( ));
+    init( );
+});
 
 
