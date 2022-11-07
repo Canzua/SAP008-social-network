@@ -30,16 +30,17 @@ export default () => {
 
   container.querySelector('#btn-register').addEventListener('click', (e) => {
     e.preventDefault();
-    const name = container.querySelector('#name').value;
-    const email = container.querySelector('#e-mail').value;
-    const password = container.querySelector('#box-new-password').value;
+    const name = container.querySelector('#name-register').value;
+    const email = container.querySelector('#e-mail-register').value;
+    const password = container.querySelector('#new-password').value;
     registerUser(name, email, password)
       .then(() => {
         redirect('');
       })
       .catch((error) => {
+        // eslint-disable-next-line no-unused-vars
         const errorMessage = error.message;
-        window.alert(errorMessage);
+        window.alert('Verifique se o e-mail e senha estão corretos.');
       });
   });
 

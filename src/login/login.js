@@ -50,8 +50,9 @@ export default () => {
         redirect('#timeline');
       })
       .catch((error) => {
+        // eslint-disable-next-line no-unused-vars
         const errorMessage = error.message;
-        window.alert(errorMessage);
+        window.alert('É obrigatório informar e-mail e senha nos campos acima para fazer o login!');
       });
   });
 

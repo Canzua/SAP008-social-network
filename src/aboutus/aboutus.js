@@ -32,21 +32,21 @@ export default () => {
             <article class='clareana'>
                 <img class='img-cla' src='./images/clareana.jpg'>
                 <aside>
-                    <a class='github' href='https://github.com/ClareanaRibeiro' target='_blank'>Clareana Ribeiro</a>
+                    <a class='github' href='https://www.linkedin.com/in/clareanaribeiro/' target='_blank'>Clareana Ribeiro</a>
                     <p class='info-cla'>Sua paixão por música vem de berço. A origem do seu nome é o nome de uma música.</p>
                 </aside>
             </article>
             <article class='angelica'>
                 <img class='img-angelica' src='./images/angelica.jpg'>
                 <aside>
-                    <a class='github' href='https://github.com/AngelMelo12' target='_blank'>Angelica Melo</a>
+                    <a class='github' href='https://www.linkedin.com/in/angelicamelodev/' target='_blank'>Angelica Melo</a>
                     <p class='info-angelica'>Música é minha válvula de escape para todos os momentos. Nos vemos em algum festival da vida!</p>
                 </aside>
             </article>
             <article class='andrea'>
             <img class='img-andrea' src='./images/andrea.jpg'>
                 <aside>
-                    <a class='github' href='https://github.com/Canzua' target='_blank'>Andrea dos Santos</a>
+                    <a class='github' href='https://www.linkedin.com/in/andreasiqueiradossantos/' target='_blank'>Andrea dos Santos</a>
                     <p class='info-andrea'>Cantora brasiliense apaixonada pela diversidade da música brasileira e do mundo.</p>
                 </aside>
             </article>
