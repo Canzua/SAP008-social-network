@@ -2,6 +2,9 @@ acesse nosso Deploy:
 
 # SHOW +
 
+![Show +](src/images/logo_04_cinza_8C8080.png)
+
+
 ## Índice
 
 * [1. Prefácio](#1-prefácio)
