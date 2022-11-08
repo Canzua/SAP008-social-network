@@ -16,7 +16,7 @@ Acesse o deploy aqui!
 * [8. Objetivos de aprendizagem](#8-objetivos-de-aprendizagem)
 * [9. Boilerplate e Testes Unitários](#9-boilerplate-e-testes-unitários)
 * [10. Firebase e Firestore](#10-firebase-e-firestore)
-* [11. Implementações Futuras](#11-implementações-futuras)
+* [11. Implementações Futuras](11-#implementações-futuras)
 * [12. Entrega](#12-entrega)
 * [13. Desenvolvedoras](#13-desenvolvedoras)
 
@@ -76,12 +76,12 @@ Historia do usuário 9:
 # 4. Interface do Usuário
 
 Protótipo de baixa fidelidade
-![Protótipo de baixa](src/images/image.png)
+![Prototipo de baixa](src/images/image.png)
 
 Protótipo de alta fidelidade / mobile first
 O protótipo foi desenvolvido no Figma.
-![Protótipo de alta 1](src/images/mobilefirst.PNG)
-![Protótipo de alta 2](src/images/mobilesecond.PNG)
+![Prototipo de alta 1](src/images/mobilefirst.PNG)
+![Prototipo de alta 2](src/images/mobilesecond.PNG)
 
 Paleta de cores
 A paleta de cores foi definida utilizando a ferramenta Adobe Color. A foto abaixo foi a escolhida para representar nossa escolha. 
