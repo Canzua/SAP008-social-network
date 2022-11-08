@@ -11,7 +11,6 @@ const main = document.querySelector('#root');
 
 const redirectLogUser = (user) => {
   if (user) {
-    console.log(user.email);
     redirect('#timeline');
   } else {
     redirect('');

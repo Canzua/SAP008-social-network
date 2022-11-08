@@ -5,48 +5,42 @@ export default () => {
   const container = document.createElement('div');
   container.classList.add('container-register');
   const template = `  
-    <section class='box-register'> 
-
-      <div class="image"> 
-        <img class="background-register" src="./images/pexels-zachary-debottis-2067677.jpg" alt="logo do título"/>
-      </div>
-
-      <div class="container-register">
-        <img class="logo-brown-register" src="./images/logo_01_brown_A6634B.png" alt="logo do título"/>
-        <h1 class = "subtitle-register">MOMENTOS MUSICAIS INESQUECÍVEIS</h1>                     
-        <form>
-          <input class ="box-name-register" type="name" id="name" placeholder="Nome completo"/>
-          <span class="material-icons">person</span>
-          <input class ="box-email-register" type="e-mail" id="e-mail" placeholder="E-mail"/>
-          <span class="material-icons">email</span>
-          <input class ="box-password-register" id="box-new-password" type="password" placeholder="Digite sua senha"/> 
-          <span class="material-icons">key</span>
-          <input class ="box-password-repeat" id="box-password-repeat" type="password" placeholder="Repetir senha"/> 
-          <span class="material-icons">key</span>
-          <button class ="btn-register" type="button" id="btn-register">Registar</button>
-          <button class ="btn-back" type="button" id="btn-back">Voltar</button>
+    <div class='box-register'> 
+      <div class='box-content-register'>
+        <div class='container-top-logo-register'>
+          <img src='./images/logo_01_brown_A6634B.png' id='logo-register' alt='logo do título'>
+        </div>
+        <div class='container-top-subtitle-register'>
+          <p id='sub-title'>MOMENTOS MUSICAIS INESQUECÍVEIS</p>
+        </div>              
+        <form class='form-register'>
+          <input class ='placeholder box-name-register' type='name' id='name-register' placeholder='Nome Completo'/>
+          <input class ='placeholder box-email-register' type='e-mail' id='e-mail-register' placeholder='E-mail'/>
+          <input class ='placeholder box-password-register' id='new-password' type='password' placeholder='Digite sua senha'/> 
+          <input class ='placeholder box-password-repeat' id='password-repeat' type='password' placeholder='Repetir senha'/> 
+          <button class = 'btn-register' type='button' id='btn-register'>Registrar</button>
         </form>
-
-        <a href="#login" class="user">Já possui uma conta? Iniciar sessão</a>
-              
-      </div>    
-    </section> 
-    `;
+        <a href='#login' class='user'>Já possui uma conta? Iniciar sessão</a> 
+        <button class ='btn-back' type='button' id='btn-back'>Voltar</button>  
+      </div> 
+    </div> 
+  `;
 
   container.innerHTML = template;
 
   container.querySelector('#btn-register').addEventListener('click', (e) => {
     e.preventDefault();
-    const name = container.querySelector('#name').value;
-    const email = container.querySelector('#e-mail').value;
-    const password = container.querySelector('#box-new-password').value;
+    const name = container.querySelector('#name-register').value;
+    const email = container.querySelector('#e-mail-register').value;
+    const password = container.querySelector('#new-password').value;
     registerUser(name, email, password)
       .then(() => {
         redirect('');
       })
       .catch((error) => {
+        // eslint-disable-next-line no-unused-vars
         const errorMessage = error.message;
-        window.alert(errorMessage);
+        window.alert('Verifique se o e-mail e senha estão corretos.');
       });
   });
 

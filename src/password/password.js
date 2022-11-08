@@ -17,24 +17,27 @@ export default () => {
       </section>
       <form>
           <p class='text-email-password'>E-mail:</p>
-          <input class='input-email-password' type='email' placeholder='Digite seu e-mail'>
-          <button id='btn-enter' class='btn-enter-password' type='button'>Enviar</button>
+          <input id='email-password'class='input-email-password' type='email' placeholder='Digite seu e-mail'>
+          <button id='btn-enter-password' class='btn-enter-password' type='button'>Enviar</button>
           <button id='btn-back' class='btn-back-password' type='button'>Voltar</button>
       </form>
     </div>`;
 
   container.innerHTML = template;
 
-  container.querySelector('#btn-enter').addEventListener('click', (e) => {
+  container.querySelector('#btn-enter-password').addEventListener('click', (e) => {
     e.preventDefault();
-    const newPassword = container.querySelector('#email').value;
+    const newPassword = container.querySelector('#email-password').value;
     resetPassword(newPassword)
       .then(() => {
         redirect('');
       })
-      .catch(() => {
-        // const errorCode = error.code;
-        // const errorMessage = error.message;
+      .catch((error) => {
+        // eslint-disable-next-line no-unused-vars
+        const errorCode = error.code;
+        // eslint-disable-next-line no-unused-vars
+        const errorMessage = error.message;
+        window.alert('Verifique se esse é o e-mail cadastrado no aplicativo.');
       });
   });
 

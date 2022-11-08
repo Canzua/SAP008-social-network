@@ -39,7 +39,6 @@ export default () => {
   const showPosts = async () => {
     const groupArr = await getAllPosts();
     const postsTemplate = groupArr.map((post) => {
-      console.log(post);
       let editBtnTemplate = '';
 
       if (userId === post.author) {

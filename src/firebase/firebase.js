@@ -25,11 +25,6 @@ const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 const db = getFirestore(app);
 
-export const getUserName = () => auth.currentUser.displayName;
-
-/* function criada para recolher o id do usuário logado,
-com a intenção de validar se o usuário é o dono de um
-post na timeline */
 export const getUserId = () => auth.currentUser.uid;
 
 // eslint-disable-next-line max-len
@@ -73,7 +68,7 @@ export const createPost = (artist, location, date, text) => { //eslint-disable-l
 export const getAllPosts = async () => {
   try {
     const querySnapshot = await getDocs(collection(db, 'posts'));
-    const postsGroup = []; // array meninas
+    const postsGroup = [];
     querySnapshot.forEach((posts) => {
       postsGroup.push({ ...posts.data(), id: posts.id });
     });

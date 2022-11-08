@@ -2,45 +2,49 @@ acesse nosso Deploy:
 
 # SHOW +
 
-![Show +](src/images/logo_04_cinza_8C8080.png)
+![Show +](src/images/logo_03_roxo_8C4A5C.png)
 
 
 ## Índice
 
 * [1. Prefácio](#1-prefácio)
 * [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Histórias do usuário](#3-historia-do-usuario)
-* [4. Interface do usuário](#4-interface-do-usuario)
-* [5. Estrutura lógica](#5-estrutura-logica)
-* [6. Code Reviews](#6-code-review)
+* [3. Histórias do usuário](#3-histórias-do-usuário)
+* [4. Interface do usuário](#4-interface-do-usuário)
+* [5. Planejamento](#5-planejamento)
+* [6. Code Reviews](#6-code-reviews)
 * [7. Processo do Desenvolvimento do Produto](#7-processo-do-desenvolvimento-do-produto)
 * [8. Objetivos de aprendizagem](#8-objetivos-de-aprendizagem)
-* [9. Testes](#9-testes)
+* [9. Boilerplate e Testes Unitários](#9-boilerplate-e-testes-unitários)
 * [10. Firebase e Firestore](#10-firebase-e-firestore)
+* [11. Implementações Futuras](11-#implementações-futuras)
+* [12. Entrega](#12-entrega)
+* [13. Desenvolvedoras](#13-desenvolvedoras)
 
 
-## 1. Prefácio / Introdução sobre o projeto
+# 1. Prefácio
 
 Seja em palcos gigantescos ou em uma roda de samba na praça, seja em um festival milionário ou na rua da sua casa, pode ter acontecido ontem ou há muitos anos atrás, alguns shows marcam nossas vidas para sempre e se tornam inesquecíveis. 
 
 Criamos este espaço para compartilharmos esses momentos, aqui, você pode contar um pouco do que viveu, encontrar pessoas que assistiram os mesmos shows ou conhecer um pouco de outras vivências sonoras.
 
-Que bom te ver por aqui, agora conta pra gente quais os seus Shows + inesquecíveis.
+Que bom te ver por aqui, agora conta pra gente quais foram os seus Shows + inesquecíveis.
 
-## 2. Resumo do projeto
+
+# 2. Resumo do projeto
 
 Quem são os principais usuários do produto?
-Pessoas que curtem a vibe e a adrenalina de estar numa multidão ou em uma apresentação intimista curtindo o mesmo som ou descobrindo novas possibilidades.
+Pessoas que curtem a vibe e a adrenalina de estar numa multidão ou em uma apresentação intimista curtindo o mesmo som ou descobrindo novas sonoridades.
 
 Quais são os objetivos do usuário em relação com o produto?
-Se conectar com outras pessoas com o objetivo de compartilhar suas experiências vividas em shows e conhecer novas aventuras sonoras.
+Se conectar com outras pessoas com o objetivo de compartilhar experiências vividas em shows e conhecer novas aventuras sonoras.
 
 Como você acredita que o produto está resolvendo os problemas do usuário?
 Em outras redes sociais, a música é só mais um tema, onde as experiências acabam se diluindo no meio de tantos assuntos, dificultando um acesso mais próximo com outras pessoas com o mesmo perfil.
 Queremos possibilitar que o público de shows possa indicar, fazer uma análise, guardar,  compartilhar memórias  e sentimentos em depoimentos sobre suas vivências.
 
 
-## 3. Histórias do usuário
+# 3. Histórias do usuário
 
 História do usuário 1: 
 "Como potencial usuário, quero ter a opção de criar uma conta onde crio meu login e senha ou utilizo meu email, para acessar a plataforma"
@@ -70,98 +74,124 @@ Historia do usuário 9:
 "Como usuário quero saber quantas pessoas gostaram do meu post, pois é importante pra mim saber o impacto do meu conteúdo."
 
 
-## 4. Interface do Usuário
+# 4. Interface do Usuário
 
 Protótipo de baixa fidelidade
-(foto da clare)
+![Prototipo de baixa](src/images/image.png)
 
-Protótipo de alta fidelidade
-(unir todas as fotos pelo menos das pages de login, cadastro e timeline, sendo em mobile e desktop).
+Protótipo de alta fidelidade / mobile first
+O protótipo foi desenvolvido no Figma.
+![Prototipo de alta 1](src/images/mobilefirst.PNG)
+![Prototipo de alta 2](src/images/mobilesecond.PNG)
 
 Paleta de cores
 A paleta de cores foi definida utilizando a ferramenta Adobe Color. A foto abaixo foi a escolhida para representar nossa escolha. 
-(imagem)
-
-Responsividade
-
-Mobile first
-
-## 5. Estrutura lógica
-
-- Os filtros (buttons) devem apresentar na página os personagens correspondentes a cada uma das categorias.
-Deve ser possível cruzar as características dos filtros (ex: espécie + gênero + status).
-- O filtro de episódios deve apresentar uma lista dos episódios correspondentes.
-- A partir da filtragem devem ser apresentados os personagens participantes do episódio filtrado.
-- Os personagens devem ter a possibilidade de ser apresentados em ordem alfabética de A - Z e de Z - A.
-- Na pesquisa (input) deve ser possível procurar pelo nome da personagem.
-- Os personagens são apresentados em formato de cards.
-- Os cards devem ser dinâmicos e virar quando o usuário passar o mouse em cima da figura, apresentando informações complementares atrás.
-- A responsividade do site deve se adequar proporcionalmente ao tamanho de cada mídia.
+![Paleta de cores](src/images/paletadecores.PNG)
 
 
-## 6. Code Reviews
+# 5. Planejamento
 
-obs.: Colocar os dois resumos da Cla - digitar e colocar em formato de link.
+O planejamento foi realizado utilizando a metologia ágil (SCRUM) e a metodologia Kanban, sendo a ferramenta escolhido o Trello.
 
-## 7. Processo do Desenvolvimento do Produto
+Cada sprint teve a duração de 01 semana, onde a equipe analisava o desenvolvimento de cada etapa e realizava os ajustes necessários para um melhor aproveitamento do tempo individual e coletivo.
 
-- Escolha do tema
-- Levantamento de problemas
-- Levantamento de informações e dados sobre o problema escolhido
-- Definição das histórias do usuário
+O projeto foi realizado em 09 sprints.
+
+
+# 6. Code Reviews
+
+Foram realizados pela equipe code reviews periodicos conforme o desenvolvimento do projeto.
+
+
+# 7. Processo do Desenvolvimento do Produto
+
+- Escolha do tema,
+- Levantamento de problemas do usuário,
+- Levantamento de informações e dados sobre a proposta escolhida,
+- Definição das histórias do usuário,
 - Planejamento por sprint,
-- Protótipo do projeto;
-- Criação de Logo;
-- Desenvolvimento do código;
-- Testes unitários;
+- Protótipo do projeto,
+- Criação de Logo,
+- Desenvolvimento do código,
+- Implementação do Firebase e Firestore,
+- Testes unitários,
 - Deploy.
 
-## 8. Objetivos de aprendizagem
-Copiar o que já está no trello
 
-## 9. Testes
+# 8. Objetivos de aprendizagem
 
-realização os testes
+Construir uma Single-page Application (SPA) responsiva (com mais de uma tela/ página) na qual seja possível ler e escrever dados.
 
-## 10. Firebase e Firestore
+- HTML
+- CSS
+- Web APIs
+- JavaScript
+- Controle de Versões (Git e GitHub)
+- User-Centricity
+- Product-Design
+- Research
+- Firebase
 
-- [ ] **Firebase Auth**
 
-  <details><summary>Links</summary><p>
+# 9. Boilerplate e Testes Unitários
 
-  * [Primeiros passos com o Firebase Authentication em sites - Documentação oficial](https://firebase.google.com/docs/auth/web/start?hl=pt-BR)
-  * [Gerenciar usuários no Firebase (onAuthStateChanged) - Documentação oficial](https://firebase.google.com/docs/auth/web/manage-users?hl=pt-BR)
-</p></details>
+Este projeto não incluiu um boilerplate, portanto definimos a estrutura de pastas e escrevemos nossos próprios testes unitários (tests).
+![Boilerplate](src/images/boilerplate.PNG)
+![Testes unitários](src/images/testesunitarios.PNG)
 
-- [ ] **Firestore**
 
-  <details><summary>Links</summary><p>
+# 10. Firebase e Firestore
 
-  * [Firestore - Documentação oficial](https://firebase.google.com/docs/firestore?hl=pt-BR)
-  * [Regras de segurança do Firebase - Documentação oficial](https://firebase.google.com/docs/rules?hl=pt-BR)
-  * [Receber atualizações em tempo real com o Cloud Firestore - Documentação oficial](https://firebase.google.com/docs/firestore/query-data/listen?hl=pt-BR)
-</p></details>
+Foram utilizados os seguintes metodos e funções:
 
-## 11. Hacker Edition
+Firebase
+* initializeApp,
+* getAuth,
+* signInWithEmailAndPassword,
+* createUserWithEmailAndPassword,
+* GoogleAuthProvider,
+* signInWithRedirect,
+* onAuthStateChanged,
+* sendPasswordResetEmail,
+* updateProfile
 
-As seções chamadas _Hacker Edition_ são **opcionais**. Se **você terminou** e
-cumpriu todos os requisitos acima e sobrou tempo, tente concluí-las. Dessa
-forma, você pode aprofundar e/ou exercitar mais os objetivos de aprendizagem do
-projeto.
+Firestore
+* getFirestore,
+* collection,
+* addDoc,
+* getDocs,
+* doc,
+* updateDoc,
+* deleteDoc,
+* getDoc
 
-* Criar posts com imagens.
-* Procurar usuários, adicionar e excluir "amigos".
-* Definir a privacidade de _posts_ (público ou apenas para amigos).
+
+# 11. Implementações Futuras
+
+* Criar posts com imagens,
+* Criar um campo de pesquisa para procurar usuários,
+* Criar filtros de pesquisa por artista, data e local,
+* Adicionar e excluir "amigos",
+* Definir a privacidade de _posts_ (público ou apenas para amigos),
 * Permitir ver na linha do tempo de usuários "não amigos" apenas os posts
-  públicos.
-* Permitir comentar ou responder a uma postagem.
+  públicos,
+* Permitir comentar ou responder a uma postagem,
 * Editar perfil.
 
-## 12. Entrega
 
-O projeto será entregue subindo seu código no GitHub (`commit` /`push`) e a
-interface será hospedada usando o GitHub pages ou outro serviço de hospedagem
-que você pode ter encontrado ao longo do caminho.
+# 12. Entrega
+
+O projeto foi entregue subindo o código no GitHub (`commit` /`push`) e a
+interface foi hospedada usando o GitHub pages.
+
+
+# 13. Desenvolvedoras
+
+O projeto foi desenvolvido em trio por:
+
+* Andrea dos Santos [GitHub](https://github.com/Canzua) / [Linkedin](https://www.linkedin.com/in/andreasiqueiradossantos/)
+* Angelica Melo [GitHub](https://github.com/AngelMelo12) / [Linkedin](https://www.linkedin.com/in/angellmelo/)
+* Clareana Ribeiro [GitHub](https://github.com/ClareanaRibeiro) / [Linkedin](https://www.linkedin.com/in/clareanaribeiro/)
 
 
 
