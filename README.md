@@ -1,4 +1,4 @@
-acesse nosso Deploy:
+acesse nosso Deploy [aqui](https://canzua.github.io/SAP008-social-network/) 
 
 # SHOW +
 
