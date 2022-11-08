@@ -142,12 +142,12 @@ export default () => {
         const img = e.target;
 
         likePost(post, postId, userId)
-          .then((resultado) => {
-            if (resultado.liked) {
-              section.querySelector('#text-likes').innerText = resultado.count;
+          .then((result) => {
+            if (result.liked) {
+              section.querySelector('#text-likes').innerText = result.count;
               img.setAttribute('src', 'images/heart.png');
             } else {
-              section.querySelector('#text-likes').innerText = resultado.count;
+              section.querySelector('#text-likes').innerText = result.count;
               img.setAttribute('src', 'images/heart_empty.png');
             }
           });

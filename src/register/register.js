@@ -37,10 +37,7 @@ export default () => {
       .then(() => {
         redirect('');
       })
-      .catch((error) => {
-        // eslint-disable-next-line no-unused-vars
-        const errorMessage = error.message;
-        window.alert('Verifique se o e-mail e senha estão corretos.');
+      .catch(() => {
       });
   });
 
