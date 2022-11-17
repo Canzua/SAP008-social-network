@@ -5,11 +5,11 @@ export default () => {
   const container = document.createElement('div');
   container.classList.add('container-login');
   const template = `
-    <div class='box-login'>
+    <section class='box-login'>
         <div class='box-content'>
-          <div class='container-top-logo'>
+          <header class='container-top-logo'>
             <img src='./images/logo_02_blue_081E26.png' id='logo-login' alt='logo do título'>
-          </div>
+          </header>
           <div class='container-top-subtitle'>
               <p id="sub-title">MOMENTOS MUSICAIS INESQUECÍVEIS</p>
           </div>
@@ -37,7 +37,8 @@ export default () => {
             </p>    
           </footer>
         </div>
-    </div>`;
+    </section>
+  `;
 
   container.innerHTML = template;
 
