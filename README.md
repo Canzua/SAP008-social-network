@@ -1,6 +1,4 @@
-acesse nosso Deploy:
-
-# SHOW +
+Acesse nosso Deploy [aqui!](https://canzua.github.io/SAP008-social-network/) 
 
 ![Show +](src/images/logo_03_roxo_8C4A5C.png)
 
