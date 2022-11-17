@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  */     
 }
 
 .container-login {
@@ -17,13 +16,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
-    margin-top: 15px;
 }
 
 #logo-login{
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
 }
 
 .container-top-subtitle{
@@ -41,24 +39,32 @@
     background-size: 100% 100%;
 }
 
+.box-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;    
+}
+
 .form-login {
+    width: 95%;  
+    height: 80%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    margin-top: 30px;
+    align-items: center;  
 }
 
 .container-email-password{
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;    
 }
 
 #email-user{
-    height: 6vh;
-    width: 80vw;
+    width: 80%;
+    height: 9%;
     border: none;
     border-radius: 5px;  
     align-items: center;
@@ -67,8 +73,8 @@
 }
 
 #password-user{
-    height: 6vh;
-    width: 80vw;
+    width: 80%;
+    height: 9%;
     margin: 20px;
     border: none;
     border-radius: 5px;
@@ -78,9 +84,8 @@
     color: #ffffffa3;
 }
 
-.btn-enter {  
-    height: 6vh;
-    width: 80vw;
+#btn-submit {  
+    padding: 9px;
     color: white;
     font-size: 1.1rem;
     border: none;
@@ -90,18 +95,20 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
-#btn-password{
+#forgot-password{
+    display: flex;
+    margin: 5%;
     color: #081E26;
     font-size: 1rem;
 }
 
-.new-password{
-    width: 40vw;
+.box-new-password{
+    display: flex;
+    padding: 9px;
+    font-size: 1.1rem;
     border:none;
     border-radius: 5px;
-    padding: 15px;
-    margin: 10%; 
-    background: #a8a6a6a3;
+    background: rgb(205, 201, 201);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
 
@@ -131,10 +138,11 @@
 }
 
 .box-login-google{
-    height: 6vh;
-    width: 80vw;
+    width: 80%;
+    height: 9%;
     color: #081E26;
     border: none;
+    margin-top: 20px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
 }
@@ -146,8 +154,8 @@
 
 #btn-register{
     margin-top: 20px;
-    height: 6vh;
-    width: 90vw;
+    width: 80%;
+    height: 9%;
     border-radius: 5px;
     border: none;
     background: rgb(205, 201, 201);
@@ -158,20 +166,17 @@
     color: white;
     font-size: 0.9rem; 
     text-align: center;
-    margin-top: 45px;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    align-items: center;       
+    align-items: center; 
+    margin-bottom: 20%;
+    padding: 5%;      
 }
 
 @media screen and (min-width: 960px){
-
-    .container-login {
-        background-color: white;
-    }
 
     .box-login {  
         display: flex;
@@ -188,80 +193,14 @@ footer {
     }
 
     .box-content {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        width: 50%;
-    }
-
-    #logo-login{
-        width: 50%;
-    }
-
-    #email-user{
-        height: 5vh;
-        width: 70%;
-        font-size: 1.4rem; 
-    }
-    
-    #password-user{
-        height: 5vh;
-        width: 70%;
-    }
-    
-    .btn-enter {  
-        height: 5vh;
-        width: 70%;
-        color: white;
-        font-size: 1.5rem;
-    }
-
-    #btn-google{
-        padding: 10px;
-        height: 50px;
-        font-size: 1.2rem;
-    }
-
-    .new-password{
-        width: 70%;
-        padding: 5px;
-        margin: 5%;
-        font-size: 1.1rem;
-    }
-
-    #btn-password {
-        width: 100%;
-    }
-
-    .box-login-google{
-        color: #081E26;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-        margin-top: 15px;
-        height: 10%;
-        width: 50%;
-    }
-    
-    #new-user{
-        color: #081E26;
-        font-size: 1.3rem;
-        text-align: center;
-        justify-content: center;
-    }
-
-    #btn-register{
-        width: 40%;
-        height: 5vh;
-        margin-top: 40px;
-        border-radius: 5px;
-        border: none;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
     }
 
     .footer-text{
         color: #081E26;
         font-size: 1.1rem;
-        margin-top: 70px;
     }
 
     .name {
