@@ -40,7 +40,7 @@ describe('registerUser', () => {
       user: {},
     });
     registerUser('teste@teste.com', 'teste123');
-    expect(createUserWithEmailAndPassword).toHaveBeenCalledTimes(1);
+    expect(createUserWithEmailAndPassword).toHaveBeenCalledTimes(                                  );
   });
 });
 
